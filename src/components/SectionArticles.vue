@@ -43,7 +43,7 @@ export default {
       <p>Together we make all the difference</p>
     </div>
     <div class="aticles-content row">
-      <div class="large-container col-6 py-2">
+      <div class="large-container col-lg-6 col-md-12 py-2">
         <img
           src="../assets/img/photo-1444213007800-cff19e1677ac-600x450.jpg"
           alt=""
@@ -56,7 +56,7 @@ export default {
           </p>
         </div>
       </div>
-      <div class="small-container col-6 py-2">
+      <div class="small-container col-lg-6 col-md-12 py-2">
         <div class="my_card d-flex" v-for="(item, index) in cards" :key="index">
           <img :src="getImagePath(`../assets/img/${item.image}`)" alt="" />
           <div class="content ms-2">

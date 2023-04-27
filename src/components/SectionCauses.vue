@@ -2,8 +2,20 @@
 export default {
   name: "SectionCauses",
   data() {
-    return {};
+    return {
+      image: [
+      "avada-charity-fair-trade-featured-200x150.jpg",
+      "avada-charity-shelter-featured-200x150.jpg",
+      "avada-charity-farming-featured-200x150.jpg",
+      "avada-charity-vaccines-featured-200x150.jpg"
+    ]
+    };
   },
+  methods: {
+    getImagePath (image) {
+      return new URL (image, import.meta.url).href
+    }
+  }
 };
 </script>
 
@@ -17,23 +29,8 @@ export default {
       </div>
       <div class="image row">
         <img
-          class="col-3"
-          src="../assets/img/avada-charity-fair-trade-featured-200x150.jpg"
-          alt=""
-        />
-        <img
-          class="col-3"
-          src="../assets/img/avada-charity-shelter-featured-200x150.jpg"
-          alt=""
-        />
-        <img
-          class="col-3"
-          src="../assets/img/avada-charity-farming-featured-200x150.jpg"
-          alt=""
-        />
-        <img
-          class="col-3"
-          src="../assets/img/avada-charity-vaccines-featured-200x150.jpg"
+          class="col-lg-3 col-md-6 mt-3" v-for="(item, index) in image" :key="index"
+          :src="getImagePath(`../assets/img/${item}`)"
           alt=""
         />
       </div>

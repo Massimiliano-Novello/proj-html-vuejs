@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-            <div class="col-3 text-center my_card">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center mt-3 my_card">
                 <i :class="icon"></i>
                 <div class="text-white card-title">
                     <h5>{{ title }}</h5>

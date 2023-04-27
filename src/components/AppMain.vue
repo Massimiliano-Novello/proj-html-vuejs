@@ -48,7 +48,7 @@ export default {
 <main>
     <!-- MOMENT SECTION -->
     <section class="section-moment row g-0">
-        <div class="left container col-7 p-4">
+        <div class="left container col-lg-7 col-md-6 p-4">
             <h3 class="fw-normal">EVERY MOMENT COUNTS</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat, ullam debitis voluptates facere quis laborum?</p>
@@ -56,7 +56,7 @@ export default {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas repellat repellendus</p>
             <button type="button" class="btn btn-warning">Our Missions</button>
         </div>
-        <div class="rigth col-5">
+        <div class="rigth col-lg-5 col-md-6">
             <div class="rigth-content text-white fs-5">
                 <div class="text-center">
                     <i class="fa-regular fa-heart me-2"></i>
