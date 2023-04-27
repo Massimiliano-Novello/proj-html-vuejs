@@ -1,9 +1,15 @@
 <script>
 import SectionOurValues from './SectionOurValues.vue';
+import SectionCauses from './SectionCauses.vue';
+import SectionArticles from './SectionArticles.vue';
+import LastSectionMain from './LastSectionMain.vue';
 export default {
     name: "AppMain",
     components: {
-        SectionOurValues
+        SectionOurValues,
+        SectionCauses,
+        SectionArticles,
+        LastSectionMain
     },
     data () {
         return {
@@ -92,6 +98,19 @@ export default {
         </div>
     </section>
     <!-- /VALUES SECTION -->
+
+    <!-- CAUSES SECTION -->
+    <SectionCauses />
+    <!-- /CAUSES SECTION -->
+
+    <!-- SECTION ARTICLES -->
+    <SectionArticles />
+    <!-- /SECTION ARTICLES -->
+
+    <!-- ULTIMA SEZIONE -->
+    <LastSectionMain />
+    <!-- /ULTIMA SEZIONE -->
+
 
 </main>
 </template>
