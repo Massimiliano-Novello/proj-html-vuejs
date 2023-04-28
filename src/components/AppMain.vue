@@ -120,11 +120,6 @@ main {
     .section-moment {
         .left {
 
-            hr {
-                color: blue;
-                width: 150px;
-            }
-
             p {
                 font-size: .9rem;
             }

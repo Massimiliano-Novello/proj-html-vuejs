@@ -11,6 +11,7 @@ export default {
   data () {
     return {
       contentNavBar: ["Home", "Missions", "Causes", "Journal", "Donate"],
+      activeIndex: 0
     }
   }
 }

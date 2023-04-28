@@ -29,7 +29,7 @@ export default {
       </div>
       <div class="image row">
         <img
-          class="col-lg-3 col-md-6 mt-3" v-for="(item, index) in image" :key="index"
+          class="col-lg-3 col-md-6 mt-3 causes-img" v-for="(item, index) in image" :key="index"
           :src="getImagePath(`../assets/img/${item}`)"
           alt=""
         />
@@ -44,6 +44,16 @@ export default {
 <style lang="scss" scoped>
 .section-causes {
     margin: 80px 0;
+
+    .causes-img {
+
+      &:hover {
+        transform: scale(1);
+        transition: .8s;
+        filter: grayscale(.8);
+        border-radius: 30px;
+      }
+    }
 
 }
 .small-causes-section {

@@ -8,6 +8,7 @@ export default {
     props: {
         navigationBar: Array,
     },
+    emits: ['clickNav'],
   data() {
     return {
     };
@@ -24,8 +25,8 @@ export default {
         <img src="../assets/img/avada-charity-mobile-logo-retina.png" alt="" />
       </div>
       <div class="navigation">
-        <ul class="header-list d-flex list">
-          <li class="mx-2" v-for="(item, index) in navigationBar" :key="index">
+        <ul class="header-list d-flex my_list">
+          <li class="mx-3" v-for="(item, index) in navigationBar" :key="index">
             <a class="text-decoration-none text-white link" href="">{{
                 item
             }}</a>
@@ -64,11 +65,25 @@ header {
     }
 
     .navigation {
-        .list {
+        .my_list {
             list-style-type: none;
 
-            .active {
-                background-color: #fcd66c;
+            &:first-child {
+              color: yellow;
+            }
+            li {
+
+
+              &:hover {
+                background-color: lightblue;
+                color: black;
+                border-radius: 20px;
+                transition: .6s;
+              }
+              
+              .link {
+                padding: 10px;
+              }
             }
 
 
